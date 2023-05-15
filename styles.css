@@ -2,16 +2,9 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom right, darkblue, blue, purple, rgb(60, 0, 80));
+    background-size: cover;
+    background-attachment: fixed;
     background-size: 100% 100%;
-}
-
-#purple-square {
-    width: 100px;
-    height: 100px;
-    background-color: purple;
-    position: absolute;
-    top: 10px;
-    left: 10px;
 }
 
 #redirect-button {
