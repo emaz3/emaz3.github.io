@@ -1,13 +1,8 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    const redirectButton = document.getElementById('redirect-button');
-    redirectButton.addEventListener('click', () => {
-        window.open('https://workupload.com/file/YknTkCR2nQA', '_blank');
-    });
-
     const tabTitle = document.title;
     const text = " [ e m a z 3 ] ";
     const typingSpeed = 150;
-    const pauseDuration = 0;
+    const pauseDuration = 50;
 
     function typeEffect() {
         document.title = "";
