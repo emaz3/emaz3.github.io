@@ -3,6 +3,8 @@ body {
     padding: 0;
     overflow: hidden;
     background: linear-gradient(to bottom right, red, blue, orange, pink);
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 
