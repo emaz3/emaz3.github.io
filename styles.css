@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(to bottom right, red, blue, orange, pink);
+    background: linear-gradient(to bottom right, blue, purple, black);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
