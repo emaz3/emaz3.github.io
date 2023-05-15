@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
 
     const tabTitle = document.title;
-    const text = "[emaz3]";
+    const text = "[ e m a z 3 ]";
     const typingSpeed = 100;
     const pauseDuration = 500;
 
