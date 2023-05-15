@@ -3,8 +3,17 @@ body {
     padding: 0;
     overflow: hidden;
     background: linear-gradient(to bottom right, red, blue, orange, pink);
-    background-size: cover;
-    background-attachment: fixed;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* opacity */
+    z-index: 1;
 }
 
 #red-square {
