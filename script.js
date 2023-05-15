@@ -1,6 +1,9 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     const redirectButton = document.getElementById('redirect-button');
+    const dropdownContent = document.getElementById('dropdown-content');
+
     redirectButton.addEventListener('click', () => {
+        dropdownContent.classList.toggle('show');
         window.open('https://workupload.com/file/YknTkCR2nQA', '_blank');
     });
 
