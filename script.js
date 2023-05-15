@@ -1,16 +1,13 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     const redirectButton = document.getElementById('redirect-button');
-    const dropdownContent = document.getElementById('dropdown-content');
-
     redirectButton.addEventListener('click', () => {
-        dropdownContent.classList.toggle('show');
         window.open('https://workupload.com/file/YknTkCR2nQA', '_blank');
     });
 
     const tabTitle = document.title;
     const text = " [ e m a z 3 ] ";
     const typingSpeed = 150;
-    const pauseDuration = 50;
+    const pauseDuration = 0;
 
     function typeEffect() {
         document.title = "";

@@ -27,26 +27,3 @@ body {
     padding: 10px 20px;
     font-size: 16px;
 }
-
-#dropdown-content {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    display: none;
-    z-index: 2;
-}
-
-.show {
-    display: block;
-}
-
-#download-button {
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
