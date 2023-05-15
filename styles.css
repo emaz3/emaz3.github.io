@@ -1,8 +1,10 @@
 body {
-    background: linear-gradient(to bottom right, red, blue, orange, pink, purple);
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background: linear-gradient(to bottom right, red, blue, orange, pink);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #red-square {
