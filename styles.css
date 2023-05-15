@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(to bottom right, red, blue, orange, pink);
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     overflow: hidden;
