@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Minecraft Page</title>
+    <title></title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
         body {
@@ -40,9 +40,9 @@
 
         #content {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
             height: calc(100vh - 80px);
         }
 
@@ -53,14 +53,16 @@
 
         #button-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 20px;
             margin-top: 20px;
         }
 
         .button {
             display: inline-block;
-            margin: 0 10px;
+            margin: 10px;
             padding: 10px 20px;
             border-radius: 6px;
             background-color: transparent;
@@ -90,5 +92,9 @@
             <a href="" target="_blank" class="button">test</a>
         </div>
     </div>
-</body>
-</html>
+    <div id="footer">
+      Dent
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
