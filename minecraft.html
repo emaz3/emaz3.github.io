@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117;
+            font-family: Roboto, sans-serif;
+        }
+
+        #tabs {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 60px;
+            padding-top: 20px;
+        }
+
+        .tab {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 20px;
+            padding: 8px 16px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .tab:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: scale(1.05);
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px);
+        }
+
+        #content h1 {
+            color: white;
+            font-size: 32px;
+        }
+
+        #button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 6px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+            font-family: Roboto, sans-serif;
+        }
+
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transform: scale(1.15);
+        }
+    </style>
+</head>
+<body>
+    <div id="tabs">
+        <div class="tab" onclick="location.href='minecraft.html'">Minecraft</div>
+        <div class="tab" onclick="location.href='tools.html'">Tools</div>
+        <div class="tab" onclick="location.href='other.html'">Other</div>
+    </div>
+
+    <div id="content">
+        <div id="button-container">
+            <a href="https://workupload.com/file/YknTkCR2nQA" target="_blank" class="button">Rise 5.100 r1</a>
+            <a href="https://workupload.com/file/4GGfXwMJSLQ" target="_blank" class="button">Dortware</a>
+            <a href="" target="_blank" class="button">test</a>
+        </div>
+    </div>
+</body>
+</html>
