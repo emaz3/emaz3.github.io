@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const tabTitle = document.title;
     const text = " [ e m a z 3 ] ";
     const typingSpeed = 150;
-    const pauseDuration = 50;
+    const pauseDuration = 0;
 
     function typeEffect() {
         let i = 0;
