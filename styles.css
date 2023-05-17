@@ -115,3 +115,23 @@ body {
     cursor: pointer;
     transform: scale(1.15);
 }
+
+.tab-content {
+    transition: transform 0.3s ease;
+}
+
+.tab-content.active {
+    transform: translateX(0);
+}
+
+.tab-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tab-content:not(.active) {
+    transform: translateX(100%);
+}

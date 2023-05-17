@@ -1,4 +1,26 @@
 window.addEventListener('DOMContentLoaded', (event) => {
+    const rainContainer = document.getElementById('rain-container');
+    const numDroplets = 100;
+
+    function createRaindrop() {
+        const raindrop = document.createElement('div');
+        raindrop.classList.add('raindrop');
+        raindrop.style.left = `${Math.random() * 100}%`;
+        raindrop.style.animationDuration = `${Math.random() * 2 + 1}s`;
+        return raindrop;
+    }
+
+    function startRain() {
+        for (let i = 0; i < numDroplets; i++) {
+            const raindrop = createRaindrop();
+            rainContainer.appendChild(raindrop);
+        }
+    }
+
+    startRain();
+});
+
+window.addEventListener('DOMContentLoaded', (event) => {
     const tabTitle = document.title;
     const text = " [ e m a z 3 ] ";
     const typingSpeed = 150;
@@ -40,11 +62,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     typeEffect();
-
-    const dropdownIcon = document.getElementById('dropdown-icon');
-    const dropdownMenu = document.getElementById('dropdown-menu');
-
-    dropdownIcon.addEventListener('click', () => {
-        dropdownMenu.classList.toggle('show');
-    });
 });

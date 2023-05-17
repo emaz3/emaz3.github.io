@@ -9,6 +9,35 @@
             padding: 0;
             background-color: #0d1117;
             font-family: Roboto, sans-serif;
+            overflow: hidden;
+        }
+
+        #rain-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .raindrop {
+            position: absolute;
+            width: 2px;
+            height: 30px;
+            background-color: #2ea1f8;
+            animation: raindropFall linear infinite;
+        }
+
+        @keyframes raindropFall {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
         }
 
         #tabs {
@@ -101,6 +130,7 @@
     </style>
 </head>
 <body>
+    <div id="rain-container"></div>
     <div id="tabs">
         <div class="tab" onclick="location.href='minecraft.html'">Minecraft</div>
         <div class="tab" onclick="location.href='tools.html'">Tools</div>
