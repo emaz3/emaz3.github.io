@@ -133,25 +133,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     initialize();
 
-    const buttons = document.getElementsByClassName('button');
-    const raindrops = document.getElementsByClassName('raindrop');
-
-    function toggleRainAnimation(pause) {
-        for (let i = 0; i < raindrops.length; i++) {
-            if (pause) {
-                raindrops[i].style.animationPlayState = 'paused';
-            } else {
-                raindrops[i].style.animationPlayState = 'running';
-            }
-        }
-    }
-
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('mouseover', function() {
-            toggleRainAnimation(true);
-        });
-        buttons[i].addEventListener('mouseout', function() {
-            toggleRainAnimation(false);
-        });
-    }
 });
