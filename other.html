@@ -2,136 +2,14 @@
 <html>
 <head>
     <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #0d1117;
-            font-family: Roboto, sans-serif;
-            overflow: hidden;
-        }
-
-        #rain-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        .raindrop {
-            position: absolute;
-            width: 2px;
-            height: 30px;
-            background-color: #2ea1f8;
-            animation: raindropFall linear infinite;
-        }
-
-        @keyframes raindropFall {
-            0% {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(100vh);
-                opacity: 1;
-            }
-        }
-
-        #tabs {
-            display: flex;
-            justify-content: left;
-            align-items: flex-start;
-            height: 50px;
-            padding-top: 20px;
-        }
-
-        .tab {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 20px;
-            padding: 8px 16px;
-            border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0);
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .tab:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            transform: scale(1.05);
-        }
-
-        #content {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: flex-start;
-            height: calc(100vh - 80px);
-        }
-
-        #content h1 {
-            color: white;
-            font-size: 32px;
-        }
-
-        #button-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: flex-start;
-            margin-left: 20px;
-            margin-top: 20px;
-        }
-
-        .button {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            border-radius: 6px;
-            background-color: transparent;
-            color: white;
-            border: 2px solid white;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            text-decoration: none;
-            font-family: Roboto, sans-serif;
-        }
-
-        .button:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            cursor: pointer;
-            transform: scale(1.15);
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #0d1117;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 5px 0;
-        }
-
-        footer a {
-            color: lightblue;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+    <div id="background-container">
+        <div id="hex-pattern"></div>
+    </div>
     <div id="rain-container"></div>
-    <div id="tabs">
+    <div id="tabs-container">
         <div class="tab" onclick="location.href='minecraft.html'">Minecraft</div>
         <div class="tab" onclick="location.href='tools.html'">Tools</div>
         <div class="tab" onclick="location.href='other.html'">Other</div>

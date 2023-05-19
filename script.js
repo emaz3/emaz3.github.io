@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     startRain();
 
-    // particle
+    // Particle
     const canvas = document.createElement('canvas');
     document.body.appendChild(canvas);
 
@@ -92,14 +92,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
         for (let i = 0; i < particles.length; i++) {
             const particle = particles[i];
 
-            // direction to mouse
             const dx = mouseX - particle.x;
             const dy = mouseY - particle.y;
             const distance = Math.sqrt(dx * dx + dy * dy);
             const directionX = dx / distance;
             const directionY = dy / distance;
 
-            // particle pos
             particle.x += directionX;
             particle.y += directionY;
 
@@ -134,4 +132,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     initialize();
+
+    const buttons = document.getElementsByClassName('button');
+    const raindrops = document.getElementsByClassName('raindrop');
+
+    function toggleRainAnimation(pause) {
+        for (let i = 0; i < raindrops.length; i++) {
+            if (pause) {
+                raindrops[i].style.animationPlayState = 'paused';
+            } else {
+                raindrops[i].style.animationPlayState = 'running';
+            }
+        }
+    }
+
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('mouseover', function() {
+            toggleRainAnimation(true);
+        });
+        buttons[i].addEventListener('mouseout', function() {
+            toggleRainAnimation(false);
+        });
+    }
 });
