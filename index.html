@@ -18,15 +18,19 @@
             left: 0;
             width: 100%;
             height: 100%;
+            overflow: hidden;
             z-index: -1;
         }
 
         #hex-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(60deg, rgba(0, 0, 0, 0.2) 90%, transparent 90%), linear-gradient(-60deg, rgba(0, 0, 0, 0.2) 90%, transparent 90%);
-            background-size: 40px 70px;
-            background-position: 0 0, 20px 35px;
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="40" height="34" viewBox="0 0 40 34"%3E%3Cpath fill="%23171b22" d="M0 10h20l20-10v24l-20 10-20-10V10zm20 24h20V20H20v14zm0-24v14h20V10H20z" /%3E%3C/svg%3E');
+            background-repeat: repeat;
+            opacity: 0.2;
         }
 
         #rain-container {
@@ -60,12 +64,15 @@
             }
         }
 
-        #tabs {
+        #tabs-container {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
             justify-content: center;
-            align-items: flex-start;
-            height: 60px;
-            padding-top: 20px;
+            align-items: center;
+            z-index: 1;
         }
 
         .tab {
@@ -88,32 +95,34 @@
         }
 
         footer {
-            position: fixed;
+            position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
-            background-color: #0d1117;
+            background-color: #0d111700;
             color: lightblue;
             padding: 10px;
             text-align: center;
+            z-index: 2;
         }
 
         footer p {
-            margin: 5px 0;
+            margin: 0px 0;
         }
 
         footer a {
             color: lightblue;
             text-decoration: none;
         }
-        
+
     </style>
 </head>
 <body>
     <div id="background-container">
         <div id="hex-pattern"></div>
+    </div>
     <div id="rain-container"></div>
-    <div id="tabs">
+    <div id="tabs-container">
         <div class="tab" onclick="location.href='minecraft.html'">Minecraft</div>
         <div class="tab" onclick="location.href='tools.html'">Tools</div>
         <div class="tab" onclick="location.href='other.html'">Other</div>
