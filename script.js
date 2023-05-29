@@ -19,7 +19,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     startRain();
 
-    // Particle
     const canvas = document.createElement('canvas');
     document.body.appendChild(canvas);
 
@@ -133,4 +132,39 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     initialize();
 
+    const tabNameText = '[_e_m_a_z_3_]';
+    const typingDelay = 700;
+    const pauseDelay = 700;
+    let tabNameIndex = 0;
+    let tabNameInterval = null;
+    let isTyping = true;
+
+    function typeWriterEffect() {
+        const currentText = document.title;
+        if (isTyping) {
+            const newText = currentText + tabNameText.charAt(tabNameIndex);
+            document.title = newText;
+            tabNameIndex++;
+
+            if (tabNameIndex === tabNameText.length) {
+                isTyping = false;
+                setTimeout(typeWriterEffect, pauseDelay);
+            } else {
+                setTimeout(typeWriterEffect, typingDelay);
+            }
+        } else {
+            const newText = currentText.slice(0, currentText.length - 1);
+            document.title = newText;
+            tabNameIndex--;
+
+            if (tabNameIndex === 0) {
+                isTyping = true;
+                setTimeout(typeWriterEffect, pauseDelay);
+            } else {
+                setTimeout(typeWriterEffect, typingDelay);
+            }
+        }
+    }
+
+    tabNameInterval = setTimeout(typeWriterEffect, typingDelay);
 });
