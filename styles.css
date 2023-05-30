@@ -1,9 +1,19 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #0d1117;
     font-family: Roboto, sans-serif;
     overflow: hidden;
+}
+
+h1 {
+    color: white;
+    display: flex;
+    position: absolute;
 }
 
 #background-container {
