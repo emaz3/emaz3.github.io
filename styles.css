@@ -1,16 +1,9 @@
 body {
-
     margin: 0;
     padding: 0;
     background-color: #0d1117;
     font-family: Roboto, sans-serif;
     overflow: hidden;
-}
-
-h1 {
-    color: white;
-    display: flex;
-    position: center;
 }
 
 #background-container {
@@ -204,4 +197,11 @@ footer p {
 footer a {
     color: lightblue;
     text-decoration: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0.1;
+    padding: 10px;
 }
