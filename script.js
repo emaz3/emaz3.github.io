@@ -132,7 +132,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     initialize();
 
-    const tabNameText = '[_e_m_a_z_3_]';
+    const tabNameText = 'e`m`a`z`3';
     const typingDelay = 700;
     const pauseDelay = 700;
     let tabNameIndex = 0;
