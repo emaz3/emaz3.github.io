@@ -6,6 +6,19 @@ body {
     overflow: hidden;
 }
 
+#middle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+}
+
 #background-container {
     position: fixed;
     top: 0;
@@ -96,7 +109,7 @@ body {
 }
 
 .tab:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(55, 0, 80, 0.815);
     transform: scale(1.05);
 }
 
@@ -142,7 +155,7 @@ body {
 
 
 .button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(55, 0, 80, 0.815);
     cursor: pointer;
     transform: scale(1.15);
 }
@@ -174,7 +187,7 @@ body {
 }
   
   .button-row2:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(55, 0, 80, 0.815);
     cursor: pointer;
     transform: scale(1.15);
 }
@@ -206,7 +219,7 @@ body {
 }
   
   .button-row3:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(55, 0, 80, 0.815);
     cursor: pointer;
     transform: scale(1.15);
 }
