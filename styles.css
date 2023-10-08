@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 body {
     margin: 0;
     padding: 0;
@@ -114,7 +116,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0px;
+    margin: 0 100px;
     padding: 8px 16px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0);
@@ -128,7 +130,21 @@ body {
 
 .tab:hover {
     background-color: rgba(255, 255, 255, 0.212);
-    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    position: relative;
+}
+
+.tab:hover::before {
+    content: "";
+    position: absolute;
+    top: -0.2em;
+    left: -0.2em;
+    right: -0.2em;
+    bottom: -0.2em;
+    background-color: white;
+    opacity: 0.5;
+    filter: blur(10px);
 }
 
 #content {
@@ -173,10 +189,26 @@ body {
 }
 
 .button:hover {
+    /* background-image: url(images/image.jpg);
+    background-position: 50px 50px;
+    transition: background-position 0.3s ease; */
     background-color: rgba(255, 255, 255, 0.212);
     cursor: pointer;
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.50em) scale(1.15);
+    position: relative;
+}
+
+.button:hover::before {
+    content: "";
+    position: absolute;
+    top: -0.2em;
+    left: -0.2em;
+    right: -0.2em;
+    bottom: -0.2em;
+    background-color: white;
+    opacity: 0.5;
+    filter: blur(10px);
 }
 
 #button-container-row2 {
@@ -207,10 +239,26 @@ body {
 }
   
   .button-row2:hover {
+    /* background-image: url(images/image.jpg);
+    background-position: 50px 50px;
+    transition: background-position 0.3s ease; */
     background-color: rgba(255, 255, 255, 0.212);
     cursor: pointer;
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.50em) scale(1.15);
+    position: relative;
+}
+
+.button-row2:hover::before {
+    content: "";
+    position: absolute;
+    top: -0.2em;
+    left: -0.2em;
+    right: -0.2em;
+    bottom: -0.2em;
+    background-color: white;
+    opacity: 0.5;
+    filter: blur(10px);
 }
 
 #button-container-row3 {
@@ -241,10 +289,26 @@ body {
 }
   
   .button-row3:hover {
+    /* background-image: url(images/image.jpg);
+    background-position: 50px 50px;
+    transition: background-position 0.3s ease; */
     background-color: rgba(255, 255, 255, 0.212);
     cursor: pointer;
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.50em) scale(1.15);
+    position: relative;
+}
+
+.button-row3:hover::before {
+    content: "";
+    position: absolute;
+    top: -0.2em;
+    left: -0.2em;
+    right: -0.2em;
+    bottom: -0.2em;
+    background-color: white;
+    opacity: 0.5;
+    filter: blur(10px);
 }
 
 footer {
