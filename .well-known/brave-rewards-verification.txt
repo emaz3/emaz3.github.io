@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: emaz3.github.io
+Token: de84fb0dd3c47212f43fe1746b85d9dadee1a9ad3fd35c01401b02fb32220db2
