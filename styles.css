@@ -21,6 +21,11 @@ body {
     z-index: 2;
     backdrop-filter: blur(5px);
 }
+
+.line-break {
+    white-space: pre-line;
+}
+
 /*
 #background-container {
     position: fixed;
@@ -119,13 +124,14 @@ body {
     margin: 0 100px;
     padding: 8px 16px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     position: relative;
     z-index: 2;
+    backdrop-filter: blur(5px);
 }
 
 .tab:hover {
@@ -133,6 +139,7 @@ body {
     cursor: pointer;
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     position: relative;
+    backdrop-filter: blur(5px);
 }
 
 .tab:hover::before {
@@ -142,7 +149,7 @@ body {
     left: -0.2em;
     right: -0.2em;
     bottom: -0.2em;
-    background-color: white;
+    background-color: rgb(89, 0, 255);
     opacity: 0.5;
     filter: blur(10px);
 }
@@ -211,25 +218,14 @@ body {
     filter: blur(10px);
 }
 
-#button-container-row2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 30px;
-    margin-top: 155px;
-    position: fixed;
-    z-index: 2;
-}
-  
-  .button-row2 {
+.star {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
     border-radius: 6px;
     background-color: transparent;
-    color: white;
-    border: 2px solid white;
+    color: rgb(21, 212, 37);
+    border: 2px solid rgb(21, 212, 37);
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
     font-family: Roboto, sans-serif;
@@ -237,8 +233,8 @@ body {
     z-index: 2;
     backdrop-filter: blur(5px);
 }
-  
-  .button-row2:hover {
+
+.star:hover {
     /* background-image: url(images/image.jpg);
     background-position: 50px 50px;
     transition: background-position 0.3s ease; */
@@ -249,16 +245,27 @@ body {
     position: relative;
 }
 
-.button-row2:hover::before {
+.star:hover::before {
     content: "";
     position: absolute;
     top: -0.2em;
     left: -0.2em;
     right: -0.2em;
     bottom: -0.2em;
-    background-color: white;
+    background-color: rgb(21, 212, 37);
     opacity: 0.5;
     filter: blur(10px);
+}
+
+#button-container-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-top: 155px;
+    position: fixed;
+    z-index: 2;
 }
 
 #button-container-row3 {
@@ -271,44 +278,16 @@ body {
     position: fixed;
     z-index: 2;
 }
-  
-  .button-row3 {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    border-radius: 6px;
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-    font-family: Roboto, sans-serif;
-    position: relative;
-    z-index: 2;
-    backdrop-filter: blur(5px);
-}
-  
-  .button-row3:hover {
-    /* background-image: url(images/image.jpg);
-    background-position: 50px 50px;
-    transition: background-position 0.3s ease; */
-    background-color: rgba(255, 255, 255, 0.212);
-    cursor: pointer;
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.50em) scale(1.15);
-    position: relative;
-}
 
-.button-row3:hover::before {
-    content: "";
-    position: absolute;
-    top: -0.2em;
-    left: -0.2em;
-    right: -0.2em;
-    bottom: -0.2em;
-    background-color: white;
-    opacity: 0.5;
-    filter: blur(10px);
+#button-container-row4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-top: 285px;
+    position: fixed;
+    z-index: 2;
 }
 
 footer {
