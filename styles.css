@@ -22,10 +22,6 @@ body {
     backdrop-filter: blur(5px);
 }
 
-.line-break {
-    white-space: pre-line;
-}
-
 /*
 #background-container {
     position: fixed;
@@ -286,6 +282,50 @@ body {
     align-items: flex-start;
     margin-left: 30px;
     margin-top: 285px;
+    position: fixed;
+    z-index: 2;
+}
+
+#button-container-row5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-top: 350px;
+    position: fixed;
+    z-index: 2;
+}
+
+#button-container-row6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-top: 415px;
+    position: fixed;
+    z-index: 2;
+}
+
+#button-container-row7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-top: 480px;
+    position: fixed;
+    z-index: 2;
+}
+
+#button-container-row8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-top: 545px;
     position: fixed;
     z-index: 2;
 }

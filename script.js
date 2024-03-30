@@ -18,8 +18,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     startRain(); */
-/*
-    const canvas = document.createElement('canvas');
+
+   /* const canvas = document.createElement('canvas');
     document.body.appendChild(canvas);
 
     const ctx = canvas.getContext('2d');
@@ -132,7 +132,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     initialize(); */
 
-    const tabNameText = 'e`m`a`z`3';
+    const tabNameText = 'e-m-a-z-3';
     const typingDelay = 700;
     const pauseDelay = 700;
     let tabNameIndex = 0;
